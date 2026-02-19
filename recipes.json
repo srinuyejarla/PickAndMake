@@ -1,0 +1,17 @@
+[
+  {
+    "name": "French Toast",
+    "ingredients": ["bread", "egg", "milk"],
+    "image": "images/french-toast.jpg"
+  },
+  {
+    "name": "Omelette",
+    "ingredients": ["egg", "salt", "onion"],
+    "image": "images/omelette.jpg"
+  },
+  {
+    "name": "Milkshake",
+    "ingredients": ["milk", "sugar"],
+    "image": "images/milkshake.jpg"
+  }
+]

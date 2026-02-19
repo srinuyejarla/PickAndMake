@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PickAndMake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🥘 PickAndMake</h1>
+        <p class="tagline">Pick what you have. Make something amazing.</p>
+        <div class="filters">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('easy')">Easy</button>
+    <button onclick="setFilter('medium')">Medium</button>
+    <button onclick="setFilter('hard')">Hard</button>
+</div>
+
+
+        <div class="search-box">
+            <input type="text" id="ingredientsInput" placeholder="egg, bread">
+            <button onclick="findRecipes()">Search</button>
+        </div>
+
+        <!-- FAVORITES SECTION -->
+        <h2 style="margin-top:40px;">⭐ Favorites</h2>
+        <div id="favorites"></div>
+
+        <!-- SEARCH RESULTS -->
+        <div id="results"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
