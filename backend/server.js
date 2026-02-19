@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 console.log("Server file loaded");
 
 const express = require("express");
@@ -9,10 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 // 🔐 Replace this with your real Spoonacular API key
-const API_KEY = "c9a077612cda4a4c82e9cad4f1273c86";
+const API_KEY = "process.env.API_KEY";
 
 // ============================
 // ROOT ROUTE
+
 // ============================
 
 app.get("/", (req, res) => {
