@@ -1,7 +1,6 @@
 let currentFilter = "all";
 let currentOffset = 0;
 let currentIngredients = "";
-const API_KEY = "c9a077612cda4a4c82e9cad4f1273c86"; // used only for modal details
 
 // =========================
 // RENDER RECIPE CARD
